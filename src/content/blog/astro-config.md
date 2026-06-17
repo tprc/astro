@@ -1,10 +1,8 @@
 ---
-title: 'Third post'
+title: astro.config
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 22 2022'
-heroImage: '../../assets/blog-placeholder-2.jpg'
 ---
-
 
 建议在大多数情况下使用默认文件格式 .mjs，如果你想在配置文件中编写 TypeScript，则使用 .ts。但是，也支持 astro.config.js。
 

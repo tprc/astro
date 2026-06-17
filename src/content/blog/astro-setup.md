@@ -41,7 +41,6 @@ Astro 项目的根目录：
   - pages/
     - posts/
         - [post].astro
-    - about.astro
     - index.astro
     - rss.xml.js
 
