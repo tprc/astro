@@ -1,0 +1,228 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-bvzihdzo> <head><!-- Global Metadata --><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><link rel="icon" href="/favicon.ico"><link rel="sitemap" href="/sitemap-index.xml"><link rel="alternate" type="application/rss+xml" title="Astro Blog" href="https://example.com/rss.xml"><meta name="generator" content="Astro v6.4.7"><style>@font-face{font-family:Atkinson-c7f4c4e8b285552f;src:url("/_astro/fonts/2e9227c2f69d4cf5.woff") format("woff");font-display:swap;font-weight:400;font-style:normal;}@font-face{font-family:Atkinson-c7f4c4e8b285552f;src:url("/_astro/fonts/2d9c54bed7b49df7.woff") format("woff");font-display:swap;font-weight:700;font-style:normal;}@font-face{font-family:"Atkinson-c7f4c4e8b285552f fallback: Arial";src:local("Arial");font-display:swap;font-weight:400;font-style:normal;size-adjust:99.3717%;ascent-override:80.1033%;descent-override:25.2587%;line-gap-override:0%;}@font-face{font-family:"Atkinson-c7f4c4e8b285552f fallback: Arial Bold";src:local("Arial Bold");font-display:swap;font-weight:700;font-style:normal;size-adjust:92.2954%;ascent-override:86.2448%;descent-override:27.1953%;line-gap-override:0%;}:root{--font-atkinson:Atkinson-c7f4c4e8b285552f,"Atkinson-c7f4c4e8b285552f fallback: Arial","Atkinson-c7f4c4e8b285552f fallback: Arial Bold",sans-serif;}</style><link rel="preload" href="/_astro/fonts/2e9227c2f69d4cf5.woff" as="font" type="font/woff" crossorigin><link rel="preload" href="/_astro/fonts/2d9c54bed7b49df7.woff" as="font" type="font/woff" crossorigin><!-- Canonical URL --><link rel="canonical" href="https://example.com/blog/astro-setup/"><!-- Primary Meta Tags --><title>Astro project structure</title><meta name="title" content="Astro project structure"><meta name="description" content="Lorem ipsum dolor sit amet"><!-- Open Graph / Facebook --><meta property="og:type" content="website"><meta property="og:url" content="https://example.com/blog/astro-setup/"><meta property="og:title" content="Astro project structure"><meta property="og:description" content="Lorem ipsum dolor sit amet"><meta property="og:image" content="https://example.com/_astro/blog-placeholder-1.Bx0Zcyzv.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://example.com/blog/astro-setup/"><meta property="twitter:title" content="Astro project structure"><meta property="twitter:description" content="Lorem ipsum dolor sit amet"><meta property="twitter:image" content="https://example.com/_astro/blog-placeholder-1.Bx0Zcyzv.jpg"><style>:root{--accent: #2337ff;--accent-dark: #000d8a;--black: 15, 18, 25;--gray: 96, 115, 159;--gray-light: 229, 233, 240;--gray-dark: 34, 41, 57;--gray-gradient: rgba(var(--gray-light), 50%), #fff;--box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%), 0 16px 32px rgba(var(--gray), 33%)}body{font-family:var(--font-atkinson);margin:0;padding:0;text-align:left;background:linear-gradient(var(--gray-gradient)) no-repeat;background-size:100% 600px;word-wrap:break-word;overflow-wrap:break-word;color:rgb(var(--gray-dark));font-size:20px;line-height:1.7}main{width:720px;max-width:calc(100% - 2em);margin:auto;padding:3em 1em}h1,h2,h3,h4,h5,h6{margin:0 0 .5rem;color:rgb(var(--black));line-height:1.2}h1{font-size:3.052em}h2{font-size:2.441em}h3{font-size:1.953em}h4{font-size:1.563em}h5{font-size:1.25em}strong,b{font-weight:700}a,a:hover{color:var(--accent)}p{margin-bottom:1em}.prose p{margin-bottom:2em}textarea{width:100%;font-size:16px}input{font-size:16px}table{width:100%}img{max-width:100%;height:auto;border-radius:8px}code{padding:2px 5px;background-color:rgb(var(--gray-light));border-radius:2px}pre{padding:1.5em;border-radius:8px}pre>code{all:unset}blockquote{border-left:4px solid var(--accent);padding:0 0 0 20px;margin:0;font-size:1.333em}hr{border:none;border-top:1px solid rgb(var(--gray-light))}@media(max-width:720px){body{font-size:18px}main{padding:1em}}.sr-only{border:0;padding:0;margin:0;position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px);clip-path:inset(50%);white-space:nowrap}footer[data-astro-cid-sz7xmlte]{padding:2em 1em 6em;background:linear-gradient(var(--gray-gradient)) no-repeat;color:rgb(var(--gray));text-align:center}.social-links[data-astro-cid-sz7xmlte]{display:flex;justify-content:center;gap:1em;margin-top:1em}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]{text-decoration:none;color:rgb(var(--gray))}.social-links[data-astro-cid-sz7xmlte] a[data-astro-cid-sz7xmlte]:hover{color:rgb(var(--gray-dark))}header[data-astro-cid-3ef6ksr2]{margin:0;padding:0 1em;background:#fff;box-shadow:0 2px 8px rgba(var(--black),5%)}h2[data-astro-cid-3ef6ksr2]{margin:0;font-size:1em}h2[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2],h2[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2].active{text-decoration:none}nav[data-astro-cid-3ef6ksr2]{display:flex;align-items:center;justify-content:space-between}nav[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{padding:1em .5em;color:var(--black);border-bottom:4px solid transparent;text-decoration:none}nav[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2].active{text-decoration:none;border-bottom-color:var(--accent)}.social-links[data-astro-cid-3ef6ksr2],.social-links[data-astro-cid-3ef6ksr2] a[data-astro-cid-3ef6ksr2]{display:flex}@media(max-width:720px){.social-links[data-astro-cid-3ef6ksr2]{display:none}}
+main[data-astro-cid-bvzihdzo]{width:calc(100% - 2em);max-width:100%;margin:0}.hero-image[data-astro-cid-bvzihdzo]{width:100%}.hero-image[data-astro-cid-bvzihdzo] img[data-astro-cid-bvzihdzo]{display:block;margin:0 auto;border-radius:12px;box-shadow:var(--box-shadow)}.prose[data-astro-cid-bvzihdzo]{width:720px;max-width:calc(100% - 2em);margin:auto;padding:1em;color:rgb(var(--gray-dark))}.title[data-astro-cid-bvzihdzo]{margin-bottom:1em;padding:1em 0;text-align:center;line-height:1}.title[data-astro-cid-bvzihdzo] h1[data-astro-cid-bvzihdzo]{margin:0 0 .5em}.date[data-astro-cid-bvzihdzo]{margin-bottom:.5em;color:rgb(var(--gray))}.last-updated-on[data-astro-cid-bvzihdzo]{font-style:italic}
+a[data-astro-cid-eimmu3lg]{display:inline-block;text-decoration:none}a[data-astro-cid-eimmu3lg].active{font-weight:bolder;text-decoration:underline}
+</style></head> <body data-astro-cid-bvzihdzo> <header data-astro-cid-3ef6ksr2> <nav data-astro-cid-3ef6ksr2> <h2 data-astro-cid-3ef6ksr2><a href="/" data-astro-cid-3ef6ksr2>Astro Blog</a></h2> <div class="internal-links" data-astro-cid-3ef6ksr2> <a href="/" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Home </a> <a href="/blog" class="active" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> Blog </a> <a href="/about" data-astro-cid-3ef6ksr2="true" data-astro-cid-eimmu3lg> About </a> </div> <div class="social-links" data-astro-cid-3ef6ksr2> <a href="https://m.webtoo.ls/@astro" target="_blank" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" data-astro-cid-3ef6ksr2><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" data-astro-cid-3ef6ksr2></path></svg> </a> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" data-astro-cid-3ef6ksr2><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-3ef6ksr2></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-3ef6ksr2> <span class="sr-only" data-astro-cid-3ef6ksr2>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" data-astro-cid-3ef6ksr2><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-3ef6ksr2></path></svg> </a> </div> </nav> </header> <main data-astro-cid-bvzihdzo> <article data-astro-cid-bvzihdzo> <div class="hero-image" data-astro-cid-bvzihdzo>  </div> <div class="prose" data-astro-cid-bvzihdzo> <div class="title" data-astro-cid-bvzihdzo> <div class="date" data-astro-cid-bvzihdzo> <time datetime="2022-07-07T16:00:00.000Z"> Jul 8, 2022 </time>  </div> <h1 data-astro-cid-bvzihdzo>Astro project structure</h1> <hr data-astro-cid-bvzihdzo> </div>  <p>Astro 项目的根目录：</p>
+<ul>
+<li>src/* - 项目源代码（组件、页面、样式、图片等）。</li>
+<li>public/* - 非代码、未处理的资源（字体、图标等）。</li>
+<li>package.json - 项目清单。</li>
+<li>astro.config.mjs - Astro 配置文件（推荐）。</li>
+<li>tsconfig.json - TypeScript 配置文件（推荐）。</li>
+</ul>
+<h2 id="astro-项目目录">Astro 项目目录</h2>
+<ul>
+<li>
+<p>public/</p>
+<ul>
+<li>robots.txt</li>
+<li>favicon.svg</li>
+<li>my-cv.pdf</li>
+</ul>
+</li>
+<li>
+<p>src/</p>
+<ul>
+<li>
+<p>blog/</p>
+<ul>
+<li>post1.md</li>
+<li>post2.md</li>
+<li>post3.md</li>
+</ul>
+</li>
+<li>
+<p>components/</p>
+<ul>
+<li>Header.astro</li>
+<li>Button.jsx</li>
+</ul>
+</li>
+<li>
+<p>images/</p>
+<ul>
+<li>image1.jpg</li>
+<li>image2.jpg</li>
+<li>image3.jpg</li>
+</ul>
+</li>
+<li>
+<p>layouts/</p>
+<ul>
+<li>PostLayout.astro</li>
+</ul>
+</li>
+<li>
+<p>pages/</p>
+<ul>
+<li>posts/
+<ul>
+<li>[post].astro</li>
+</ul>
+</li>
+<li>index.astro</li>
+<li>rss.xml.js</li>
+</ul>
+</li>
+<li>
+<p>styles/</p>
+<ul>
+<li>global.css</li>
+</ul>
+</li>
+<li>
+<p>content.config.ts</p>
+</li>
+</ul>
+</li>
+<li>
+<p>astro.config.mjs</p>
+</li>
+<li>
+<p>package.json</p>
+</li>
+<li>
+<p>tsconfig.json</p>
+</li>
+</ul>
+<h3 id="src">src/</h3>
+<p>src/ 文件夹是大部分项目源代码所在的地方。这包括：</p>
+<ul>
+<li>页面</li>
+<li>布局</li>
+<li>Astro 组件</li>
+<li>UI 框架组件（React 等）</li>
+<li>样式（CSS、Sass）</li>
+<li>Markdown</li>
+<li>由 Astro 优化和处理的图像</li>
+</ul>
+<p>Astro 处理、压缩和打包你的 src/ 文件以创建最终传递到浏览器的网站。与静态的 public/ 目录不同，src/ 文件是由 Astro 为你构建和处理的。</p>
+<p>有些文件（如 Astro 组件）甚至不会按写入方式传递到浏览器，而是被渲染成静态 HTML。其他文件（如 CSS）则会被传递到浏览器，但可能被会压缩或与其他 CSS 文件打包在一起以提高性能。</p>
+<p>Astro 保留的目录只有 src/pages/。你可以自由的以最适合自己的方式重命名和重新组织任何其他目录。</p>
+<ul>
+<li>src/pages</li>
+</ul>
+<p>页面 是一种用于创建新的页面的特殊组件。一个页面可以是一个 Astro 组件，也可以是表示站点某些页面内容的 Markdown 文件。</p>
+<p>src/pages 是 Astro 项目中必须要有的子目录。没有它，你的网站将没有任何页面或路径！</p>
+<p>src/pages/ 中的文件负责处理路由、数据加载以及网站中每个页面的整体页面布局。</p>
+<p>Astro 支持 src/pages/ 目录中的以下文件类型：</p>
+<ul>
+<li>.astro</li>
+<li>.md</li>
+<li>.mdx (需要安装 MDX 集成)</li>
+<li>.html</li>
+<li>.js/.ts (as endpoints)</li>
+</ul>
+<p>Astro 使用一种名为 基于文件的路由 的路由策略。src/pages/ 目录中的每个文件都会根据其文件路径成为网站上的一个端点。</p>
+<p>一个文件也可以使用动态路由来生成多个页面。这允许你即使内容不在特殊的 /pages/ 目录中，也可以创建页面，例如在内容集合或内容管理系统中。</p>
+<p>Astro 页面 .astro 支持与 Astro 组件相同的功能。</p>
+<p>一个页面必须生成完整的 HTML 文档。如果没有显式包含，Astro 将会自动为位于 src/pages/ 目录下的任何 .astro 组件默认添加必要的  声明和  内容。你可以通过将组件标记为局部页面来为每个组件避免这种行为。</p>
+<p>为了避免在每个页面上重复相同的 HTML 元素，你可以将常见的  和  元素移动到自己的 布局组件 中。你可以使用任意多的布局组件。</p>
+<hr>
+<mysitelayout>
+  <p>包裹在 layout 里的页面内容！</p>
+</mysitelayout>
+<h3 id="markdownmdx-页面">Markdown/MDX 页面</h3>
+<p>Astro 还将 src/pages/ 目录中的任何 Markdown (.md) 文件视为网站中的页面。如果你安装了 MDX 集成，它也会将 MDX (.mdx) 文件视为相同的页面。</p>
+<p>当内容为博客文章或者产品项目这类共享相似结构的相关 Markdown 文件时，请考虑创建 内容集合 而不是页面。</p>
+<p>Markdown 文件可以使用特殊的 layout 前置属性来指定一个 布局组件，它将包装其 Markdown 内容在一个完整的 … 页面文档中。</p>
+<p>HTML 页面</p>
+<p>.html 文件扩展名的文件可以放在 src/pages/ 中，并直接用作网站上的页面。请注意，某些关键的 Astro 功能在 HTML 组件 中不受支持。</p>
+<p>自定义 404 错误页面</p>
+<p>想要自定义 404 错误页面，你可以在 src/pages 中创建 404.astro 或 404.md 文件。</p>
+<p>它将生成 404.html 页面。大多数部署服务都自动找到并使用它。</p>
+<p>自定义 500 错误页面</p>
+<p>要为按需渲染的页面创建自定义的 500 错误页面，可以创建一个 src/pages/500.astro 文件。但这个自定义页面不适用于预渲染的页面。</p>
+<p>如果在渲染此页面时发生错误，将显示主机默认的 500 错误页面给访问者。</p>
+<p>添加于： astro@4.10.3</p>
+<p>在开发过程中，如果你有一个 500.astro 文件，运行时抛出的错误将被记录在终端中，而不是显示在错误覆盖层中。</p>
+<p>error</p>
+<p>添加于： astro@4.11.0</p>
+<p>src/pages/500.astro 是一个特殊页面，它会在渲染过程中对抛出的任何错误都会自动传递一个 error 属性。这允许你向访客展示详细的错误信息（例如来自页面、中间件等）。</p>
+<p>error 属性的数据类型可以是任何类型，这可能会影响你在代码中的定义或使用值的方式：
+src/pages/500.astro</p>
+<hr>
+<h2 id="interface-props-error-unknownconst--error---astroprops">interface Props {
+error: unknown;
+}
+const { error } = Astro.props;</h2>
+<div>{error instanceof Error ? error.message : "Unknown error"}</div>
+<p>为了避免在展示内容时从 error 属性中显示敏感信息，请首先考虑评估错误，并根据抛出的错误返回适当的内容。例如，应避免显示错误的堆栈，因为它包含有关服务器上代码结构的信息。
+局部页面</p>
+<p>添加于： astro@3.4.0</p>
+<p>警告</p>
+<p>局部页面是用于与前端库（如 htmx 或 Unpoly）搭配使用的。如果你习惯编写原生的前端 JavaScript，也可以使用它。这是一项高级功能。</p>
+<p>如果组件包含有作用域的样式或脚本，那么不应该使用局部页面，因为这些元素将从 HTML 输出中剥离；如果需要有作用域的样式，最好使用常规的非局部的页面，并配合一个知道如何将内容合并到 head 标签中的前端库。</p>
+<p>局部页面是位于 src/pages/ 目录中的页面组件，但不会作为完整页面进行渲染。</p>
+<p>与位于此文件夹之外的组件一样，这些文件不会自动包含  声明，也不会包含任何作用域样式和脚本的  内容。</p>
+<p>不过，由于它们位于特殊的 src/pages/ 目录中，所以生成的 HTML 可以通过与文件路径相对应的 URL 来访问。这允许渲染库（如 htmx、Stimulus、jQuery 等）在客户端访问它，并在页面上动态加载 HTML 的部分，而无需刷新浏览器或进行页面导航。</p>
+<p>局部页面与渲染库结合时，局部页面提供了一种可以代替 Astro 岛屿和 <script> 标签方式用于在 Astro 中构建动态内容的方法。</script>
+</p><p>可以导出一个值为 partial 的页面文件（例如 .astro 和 .mdx，但不是 .md）可以标记为局部页面。
+src/pages/partial.astro</p>
+<hr>
+<h2 id="export-const-partial--true">export const partial = true;</h2>
+<li>我是一个局部页面！</li>
+<p>和库搭配使用</p>
+<p>局部页面用于使用诸如 htmx 的库动态更新页面的某个部分。</p>
+<p>下面的示例展示了将 hx-post 属性设置为局部页面的 URL。局部页面的内容将用于更新此页面上目标 HTML 元素的内容。
+src/pages/index.astro </p>
+  
+    <title>我的页面</title>
+    <script src="https://unpkg.com/htmx.org@1.9.6" integrity="sha384-FhXw7b6AlE/jyjlZH5iHa/tTe9EpJ1Y55RjcgPbjeWMskSxZt1v9qkxLJWNJaGni" crossorigin="anonymous"></script>
+  
+  
+    <section>
+      <div id="parent-div">Target here</div>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>  &#x3C;button hx-post="/partials/clicked/"</span></span>
+<span class="line"><span>    hx-trigger="click"</span></span>
+<span class="line"><span>    hx-target="#parent-div"</span></span>
+<span class="line"><span>    hx-swap="innerHTML"</span></span>
+<span class="line"><span>  ></span></span>
+<span class="line"><span>    点我！</span></span>
+<span class="line"><span>  &#x3C;/button></span></span>
+<span class="line"><span>&#x3C;/section></span></span></code></pre>
+  
+
+<p>.astro 局部页面必须在相应的文件路径中存在，并且包含一个导出定义将页面定义为局部页面：
+src/pages/partials/clicked.astro</p>
+<hr>
+<h2 id="export-const-partial--true-1">export const partial = true;</h2>
+<div>我被点击了！</div>
+<ul>
+<li>src/components</li>
+</ul>
+<p>组件是你在 HTML 页面中可重复使用的代码单元。它可以是 Astro 组件 或是像 React 或 Vue 这样的 UI 框架组件。通常将你项目中所有组件都分组放在这个文件夹中。</p>
+<p>这是 Astro 项目约定俗成的，但不是必需的。你可以随意组织你的组件！</p>
+<ul>
+<li>src/layouts</li>
+</ul>
+<p>布局 是定义一个或多个 页面 共享的 UI 结构的 Astro 组件。</p>
+<p>和 src/components 一样，这个目录也只是约定俗成，但不是必需的。</p>
+<ul>
+<li>src/styles</li>
+</ul>
+<p>将 CSS 或 Sass 文件存储在 src/styles 目录中是一种常见的约定，但这不是必需的。只要你的样式位于 src/ 目录中的某个位置并且正确导入，Astro 就会处理和压缩它们。</p>
+<ul>
+<li>public/</li>
+</ul>
+<p>public/ 目录用于项目中不需要在 Astro 构建过程中处理的文件和资源。这个文件夹中的文件将会被原封不动地复制到构建文件夹中，然后你的网站将被构建。</p>
+<p>这种行为使 public/ 非常适合用来存放不需要任何处理的常见资源，如某些图片和字体，或特殊文件，如 robots.txt 和 manifest.webmanifest。</p>
+<p>你也可以把 CSS 和 JavaScript 放在 public/ 目录中，但要注意这些文件不会在最终构建中被打包或压缩。</p>
+<p>一般而言，你自己编写的 CSS 或 JavaScript 都应该放在 src/ 目录下。</p>
+<ul>
+<li>package.json</li>
+</ul>
+<p>JavaScript 包管理器用它来管理依赖关系。它也定义了通常用于运行 Astro 的脚本（例如：npm run dev、npm run build）。</p>
+<p>在 package.json 中可以指定 两种依赖关系：dependencies 和 devDependencies。在大多数情况下它们效果一样，Astro 在构建时需要所有依赖，而你的包管理器则会同时安装这两种依赖。我们建议把所有的依赖项放在 dependencies 中，只有在你发现有特殊需要后，再使用 devDependencies。</p>
+<p>如果想要为你的项目创建新的 package.json 文件时遇到困难，请查看 手动安装 中的说明。</p>
+<ul>
+<li>astro.config.mjs</li>
+</ul>
+<p>该文件在每个入门模板中都会生成，它包括你的 Astro 项目的配置。你可以在这里指定要使用的集成、构建选项、服务器选项以及其他内容。</p>
+<p>Astro 支持多种 JavaScript 配置文件格式：astro.config.js、astro.config.mjs 以及 astro.config.ts。大多数情况下，我们更建议使用 .mjs，如果你想在配置文件中编写 TypeScript 则建议使用 .ts。</p>
+<p>TypeScript 配置文件加载是使用 tsm 来进行处理的，并且会遵循你项目中的 tsconfig 选项。</p>
+<ul>
+<li>tsconfig.json</li>
+</ul>
+<p>该文件在每个入门模板中都会生成，它包括你的 Astro 项目的 TypeScript 配置项。如果没有 tsconfig.json 文件，编辑器将不完全支持某些功能（如 npm 包的导入）。</p></section>  </div> </article> </main> <footer data-astro-cid-sz7xmlte>
+&copy; 2026 Your name here. All rights reserved.
+<div class="social-links" data-astro-cid-sz7xmlte> <a href="https://m.webtoo.ls/@astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Mastodon</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/mastodon" data-astro-cid-sz7xmlte><path fill="currentColor" d="M11.19 12.195c2.016-.24 3.77-1.475 3.99-2.603.348-1.778.32-4.339.32-4.339 0-3.47-2.286-4.488-2.286-4.488C12.062.238 10.083.017 8.027 0h-.05C5.92.017 3.942.238 2.79.765c0 0-2.285 1.017-2.285 4.488l-.002.662c-.004.64-.007 1.35.011 2.091.083 3.394.626 6.74 3.78 7.57 1.454.383 2.703.463 3.709.408 1.823-.1 2.847-.647 2.847-.647l-.06-1.317s-1.303.41-2.767.36c-1.45-.05-2.98-.156-3.215-1.928a3.614 3.614 0 0 1-.033-.496s1.424.346 3.228.428c1.103.05 2.137-.064 3.188-.189zm1.613-2.47H11.13v-4.08c0-.859-.364-1.295-1.091-1.295-.804 0-1.207.517-1.207 1.541v2.233H7.168V5.89c0-1.024-.403-1.541-1.207-1.541-.727 0-1.091.436-1.091 1.296v4.079H3.197V5.522c0-.859.22-1.541.66-2.046.456-.505 1.052-.764 1.793-.764.856 0 1.504.328 1.933.983L8 4.39l.417-.695c.429-.655 1.077-.983 1.934-.983.74 0 1.336.259 1.791.764.442.505.661 1.187.661 2.046v4.203z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://twitter.com/astrodotbuild" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Follow Astro on Twitter</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/twitter" data-astro-cid-sz7xmlte><path fill="currentColor" d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" data-astro-cid-sz7xmlte></path></svg> </a> <a href="https://github.com/withastro/astro" target="_blank" data-astro-cid-sz7xmlte> <span class="sr-only" data-astro-cid-sz7xmlte>Go to Astro's GitHub repo</span> <svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32" astro-icon="social/github" data-astro-cid-sz7xmlte><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" data-astro-cid-sz7xmlte></path></svg> </a> </div> </footer> </body></html>
